@@ -64,7 +64,7 @@ public class S33_ArrayPracticeSet {
             System.out.println(" ");
         }*/
 
-//        find our maximun elemnt of an arry
+//        find our maxmiun element of an array
         /*int[] arr = {5, 8, 12, 3, 9, 15, 1};
         int max = arr[0]; // assume first element is max
         for (int i = 1; i < arr.length; i++) {

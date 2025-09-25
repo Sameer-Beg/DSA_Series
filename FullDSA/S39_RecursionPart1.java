@@ -30,7 +30,26 @@ public class S39_RecursionPart1 {
         printnum(i+1 , n , sum);
     }
 
+//    question 4 method
+    public static int printfactorial(int n){
+        if (n == 0 || n == 1){
+            return 1;
+        }
+        return n * printfactorial(n - 1);
+    }
+
+//    question 5 method
+    public static int printfibbonaci(int n){
+        if(n == 0)
+            return 0;
+
+        if(n == 1)
+            return 1 ;
+
+        return printfibbonaci(n - 1) + printfibbonaci(n - 2);
+    }
     public static void main(String[] args) {
+
 //        print number from 5 -1
         int n = 5 ;
         printnumber(n);
@@ -40,7 +59,12 @@ public class S39_RecursionPart1 {
         printnumb(n2);
 
 //        print sum od n natural number
-        printnum(1,5,0);
+        System.out.println(printfactorial(5));
 
+//        print factorial of number n
+        printfactorial(5);
+
+//        print the fibbonaci sereies
+        System.out.println(printfibbonaci(10));
     }
 }
